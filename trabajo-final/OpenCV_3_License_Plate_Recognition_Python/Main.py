@@ -15,7 +15,7 @@ SCALAR_YELLOW = (0.0, 255.0, 255.0)
 SCALAR_GREEN = (0.0, 255.0, 0.0)
 SCALAR_RED = (0.0, 0.0, 255.0)
 
-showSteps = False
+showSteps = True
 
 ###################################################################################################
 def main():
@@ -27,9 +27,10 @@ def main():
         return                                                          # and exit program
     # end if
 
+
     imgOriginalScene  = cv2.imread("53.png")               # open image
 
-    if imgOriginalScene is None:                            # if image was not read successfully
+    if imgOriginalScene is None:                         # if image was not read successfully
         print("\nerror: image not read from file \n\n")  # print error message to std out
         os.system("pause")                                  # pause so user can see error message
         return                                              # and exit program
